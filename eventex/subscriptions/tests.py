@@ -99,8 +99,6 @@ class SubscribeInvalidPost(TestCase):
 
 
 class SubscribeSucessMessage(TestCase):
-    def setUp(self):
-        pass
     def test_message(self):
         data = dict(name='Henrique Bastos', cpf='12345678901', email="henrique@bastos.net", phone='12345678')
         response = self.client.post('/inscricao/', data, follow=True)
