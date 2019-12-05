@@ -25,3 +25,6 @@ class SubscriptionModuleTest(TestCase):
 
     def test_str(self):
         self.assertEqual('Henrique Bastos', str(self.obj))
+
+    def test_paid_detault_to_False(self):
+        self.assertEqual(False, self.obj.paid)
