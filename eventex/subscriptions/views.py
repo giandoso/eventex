@@ -26,7 +26,7 @@ def create(request):
         return render(request, 'subscriptions/subscription_form.html',
                       {'form': form})
 
-    subscription = form.save() 
+    subscription = form.save()
 
     # send mail
     subject = 'Confirmação de inscrição'
